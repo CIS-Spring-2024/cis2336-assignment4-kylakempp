@@ -1,0 +1,15 @@
+{
+  "name": "cis2336-assignment4-kylakempp",
+  "version": "1.0.0",
+  "description": "1.This assignment is graded.\r 2.please follow the instructions file posted on canvas\r 3.Upload your work to canvas and push all your files to your repository.\r 4.clone this repository and start working on the Assignmnet-4&5",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

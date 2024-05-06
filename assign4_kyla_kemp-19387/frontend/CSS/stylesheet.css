@@ -1,0 +1,288 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: "Nunito Sans", "sans-serif";
+
+}
+
+/*-- heading and navigation --*/
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../images/cougargrounds.jpeg); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+/* Navigation */
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
+  }
+  
+  nav .fa-bars {
+    display: none;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  li {
+    list-style: none;
+    margin-right: 2rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #2c2c2c;
+  }
+  
+  .header ul li {
+    background: rgb(244, 239, 236);
+    padding: 10px 16px;
+    border-radius: 4px;
+  }
+  
+  .header ul li:hover {
+    background: #7dc7b6;
+    transition: 0.2s ease-out;
+    color: white;
+  }
+  
+
+
+/* Dropdown */
+
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #df8d8d;
+    min-width: 100%;
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 14px 16px; 
+    display: block;
+    text-align: center; 
+    text-decoration: none;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #111;
+  }
+  
+  
+  .dropdown-content li {
+    padding: 10px 16px;
+  }
+
+  .dropdown-content li a {
+    display: block;
+    text-decoration: none;
+    color: #2c2c2c;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #ddd;
+  }
+
+/* -- end of heading -- */
+
+body
+{
+    background-color:rgb(254, 249, 244);
+}
+
+
+.maintext {
+    padding: 50px;
+    background-color:rgb(221, 90, 81);
+    text-align: center;
+
+}
+
+#h01 {
+    font-size: 50px;
+}
+
+#p01 {
+    font-size: 20px;
+}
+    
+/* -- starting text sections */
+.chooseus
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+#h02 {
+    color:#343434;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.basicinfo-col {
+    flex-basis: 31%;
+    background: #7dc7b6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.basicinfo-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.imgfood {
+    float:right;
+    width:60%;
+    padding: 50px;
+}
+
+
+.qlinks {
+    flex-basis: 31%;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.qlinks:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+
+#qulink {
+    color:white;
+}
+
+
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+
+#hours1 {
+    font-weight: 600;
+}
+
+#hours2 {
+    color:white;
+}
+
+#loc {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.links {
+    text-align: center;
+    padding:100px; 
+    background-color:rgb(221, 90, 81);
+}
+
+
+/*-- biography page --*/
+
+#owner {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 75px;
+}
+
+#bioimage {
+    align-items: center;
+    padding:50px;
+}
+
+#biotext {
+    font-weight: 400;
+    font-size: 19px;
+    text-align: center;
+    padding:10px;
+
+}
+
+#kodapic {
+    text-align:right;
+    padding:10px;
+}
+
+
+
+
+/*-- adjusting for media */
+@media screen and (max-width: 768px) {
+    .maintext #h01 {
+        font-size: 30px;
+    }
+    .maintext #p01 {
+        font-size: 20px;
+    }
+
+    nav .fa-bars {
+        display:block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color:rgb(221, 90, 81);
+    }
+
+
+    .header ul li {
+        display: none;
+    }
+
+    .topnav-img {
+        height:70%;
+        justify-content: center;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+
+}
+
+
+

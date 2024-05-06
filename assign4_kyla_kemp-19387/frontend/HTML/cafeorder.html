@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Form</title>
+    <link rel="stylesheet" href="../CSS/styleorder.css">
+</head>
+<body>
+
+    <section class="header">
+            
+        <nav>
+          <a href="#" class="logo"> UH</a>
+          <i class="fas fa-bars"></i>
+
+  <div class="topnav">
+      <ul>
+      <li><a href="homepage.html">Home</a></li>
+       <li><a href="cafeabout.html">About</a></li>
+
+      <li class="dropdown">
+          <a href="cafeorder.html">Order</a>
+          <div class="dropdown-content">
+          <a href="cafemenu.html">Menu</a>
+          </div>
+      </li>
+      <li><a href="cafegetinvolved.html">Get Involved</a</li>
+      <li><a href="cafecontact.html">Contact</a></li>
+      <img  src="C:\Users\kylaa\OneDrive\Desktop\CIS2336\cis-2336-assignment-1-kylakempp\assign1_kyla_kemp-19387\images\cougar pawprint.jpg" alt="pawprint" 
+         style="width:35px;height:35px; float:right;">
+
+    </ul>
+    </div>
+    </nav> 
+    </section>
+
+    <div class="container">
+        <h1>Food Order Form</h1>
+        <form id="orderForm" action="/submit" method="POST">
+
+<!-- breakfast items-->
+
+            <h2>BREAKFAST</h2>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Breakfast" value="pancakes" data-price="6.99"> Pancakes - $6.99<span class="quantity-text hidden"> Quantity: <input type="number" name="pancakes_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Breakfast" value="omelette" data-price="8.99"> Omelette - $8.99<span class="quantity-text hidden"> Quantity: <input type="number" name="omelette_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Breakfast" value="french toast" data-price="7.49"> French Toast - $7.49<span class="quantity-text hidden"> Quantity: <input type="number" name="french toast_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Breakfast" value="muffins" data-price="5.99"> Muffins - $5.99<span class="quantity-text hidden"> Quantity: <input type="number" name="muffins_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Breakfast" value="waffles" data-price="8.49"> Waffles - $8.49<span class="quantity-text hidden"> Quantity: <input type="number" name="waffles_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Breakfast" value="grilled cheese" data-price="4.99"> Grilled Cheese - $4.99<span class="quantity-text hidden"> Quantity: <input type="number" name="grilled cheese_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+
+<!--lunch items-->
+
+            <h2>LUNCH</h2>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Lunch" value="sandwich" data-price="5.99"> Sandwich - $5.99<span class="quantity-text hidden"> Quantity: <input type="number" name="sandwich_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Lunch" value="salad" data-price="7.99"> Salad - $7.99<span class="quantity-text hidden"> Quantity: <input type="number" name="salad_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Lunch" value="burger" data-price="8.49"> Burger - $8.49<span class="quantity-text hidden"> Quantity: <input type="number" name="burger_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Lunch" value="chicken wrap" data-price="6.99"> Chicken Wrap - $6.99<span class="quantity-text hidden"> Quantity: <input type="number" name="chicken wrap_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Lunch" value="soup" data-price="5.49"> Soup - $5.49<span class="quantity-text hidden"> Quantity: <input type="number" name="soup_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Lunch" value="pizza" data-price="10.99"> Pizza - $10.99<span class="quantity-text hidden"> Quantity: <input type="number" name="pizza_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+
+<!--dinner items-->
+
+            <h2>DINNER</h2>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Dinner" value="chicken rice" data-price="9.99"> Chicken & Rice - $9.99<span class="quantity-text hidden"> Quantity: <input type="number" name="chicken rice_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Dinner" value="pasta" data-price="10.99"> Pasta - $10.99<span class="quantity-text hidden"> Quantity: <input type="number" name="pasta_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Dinner" value="bbqwings" data-price="12.49"> Barbecue Wings - $12.49<span class="quantity-text hidden"> Quantity: <input type="number" name="bbqwings_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Dinner" value="chicken parm" data-price="12.99"> Chicken Parmesan - $12.99<span class="quantity-text hidden"> Quantity: <input type="number" name="chicken parm_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Dinner" value="veg stirfry" data-price="11.99"> Vegetarian Stirfry - $11.99<span class="quantity-text hidden"> Quantity: <input type="number" name="veg stirfry_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Dinner" value="sushi" data-price="14.49"> Sushi - $14.49<span class="quantity-text hidden"> Quantity: <input type="number" name="sushi_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+
+<!--drinks/dessert items-->
+
+            <h2>DRINKS & DESSERTS</h2>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Drink/dessert" value="soda" data-price="1.49"> Soda - $1.49<span class="quantity-text hidden"> Quantity: <input type="number" name="soda_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Drink/dessert" value="coffee" data-price="4.99"> Coffee - $4.99<span class="quantity-text hidden"> Quantity: <input type="number" name="coffee_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Drink/dessert" value="milk" data-price="1.99"> Milk - $1.99<span class="quantity-text hidden"> Quantity: <input type="number" name="milk_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Drink/dessert" value="brownie" data-price="2.99"> Brownie - $2.99<span class="quantity-text hidden"> Quantity: <input type="number" name="brownie_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Drink/dessert" value="cookie" data-price="1.99"> Cookie - $1.99<span class="quantity-text hidden"> Quantity: <input type="number" name="cookie_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+            <div class="menu-item">
+                <label><input type="checkbox" name="Drink/dessert" value="cupcake" data-price="2.99"> Cupcake - $2.99<span class="quantity-text hidden"> Quantity: <input type="number" name="cupcake_quantity" value="1" min="1" max="10"></span></label>
+            </div>
+
+<!--contact info-->
+
+            <h2>Contact Information</h2>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <h2>Delivery Method</h2>
+            <div>
+                <label><input type="radio" name="deliveryMethod" value="Pickup"> Pickup</label>
+            </div>
+
+            <h2>Special Instructions</h2>
+            <div>
+                <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea>
+            </div>
+
+            <h2>Payment Method</h2>
+            <div>
+                <label><input type="radio" name="paymentMethod" value="Cash" checked> Cash on Pickup</label>
+                <label><input type="radio" name="paymentMethod" value="Card"> Credit/Debit Card</label>
+            </div>
+
+            <div id="orderSummary"></div>
+
+            <div id="totalPrice">Total Price: $0</div>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <!-- Popup markup -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <p>Your order will be processed soon. We will contact you when your order is ready for pickup.</p>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <script src="../JS/scriptorder.js"></script>
+</body>
+</html>

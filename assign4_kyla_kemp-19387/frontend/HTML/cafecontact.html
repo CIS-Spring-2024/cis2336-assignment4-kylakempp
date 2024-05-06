@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koda Kafe - Contact</title>
+    <link rel="stylesheet" href="../CSS/stylecontact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+         crossorigin="anonymous">
+    
+     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="#" class="logo">UH</a>
+            <i class="fas fa-bars"></i>
+            <div class="topnav">
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="cafeabout.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="cafeorder.html">Order</a>
+                        <div class="dropdown-content">
+                            <a href="cafemenu.html">Menu</a>
+                        </div>
+                    </li>
+                    <li><a href="cafegetinvolved.html">Get Involved</a></li>
+                    <li><a href="cafecontact.html">Contact</a></li>
+                </ul>
+               
+            </div>
+        </nav> 
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact">
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+
+        <!-- Rating section -->
+        <section class="rating">
+            <h2>Rate Your Experience</h2>
+            <div class="stars">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2"><i class="fas fa-star"></i></label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1"><i class="fas fa-star"></i></label>
+            </div>
+            <br> <br>
+            <button id="submitRating">Submit Rating</button>
+        </section>
+
+        <section class="contact-info">
+            <div class="info-box">
+                <p>For customer service inquiries, please contact us:</p>
+                <p>Phone: 777-777-7777</p>
+                <p>Email: KodaKafe@gmail.com</p>
+            </div>
+        </section>
+        
+        
+    </section>
+
+    <script>
+        document.getElementById('submitRating').addEventListener('click', function() {
+            var rating = document.querySelector('input[name="rating"]:checked');
+                if (rating) {
+                 alert('You rated ' + rating.value + ' stars.');
+                } else {
+                 alert('Please select a rating.');
+             }
+            });
+    </script>
+</body>
+</html>

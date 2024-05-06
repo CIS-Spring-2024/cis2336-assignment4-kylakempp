@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Koda Kafe Menu</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/stylemenu.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+  integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+  crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+    <section class="header">
+            
+        <nav>
+          <a href="#" class="logo"> </a>
+          <i class="fas fa-bars"></i>
+
+
+ <!-- navigation-->
+
+    <div class="topnav">
+        <ul>
+         <li><a href="homepage.html">Home</a></li>
+         <li><a href="cafeabout.html">About</a></li>
+
+         <li class="dropdown">
+            <a href="cafeorder.html">Order</a>
+            <div class="dropdown-content">
+              <a href="cafemenu.html">Menu</a>
+            </div>
+          </li>
+         <li><a href="cafegetinvolved.html">Get Involved</a</li>
+         <li><a href="cafecontact.html">Contact</a></li>
+         <img  src="C:\Users\kylaa\OneDrive\Desktop\CIS2336\cis-2336-assignment-1-kylakempp\assign1_kyla_kemp-19387\images\cougar pawprint.jpg" alt="pawprint" 
+               style="width:35px;height:35px; float:right;">
+
+        </ul>
+     </div>
+    </nav> 
+    </section>
+
+
+
+  <div class="menu-container">
+    <h2>Menu</h2>
+    <div class="tabs">
+      <button class="tablinks" onclick="openMenu(event, 'breakfast')">Breakfast</button>
+      <button class="tablinks" onclick="openMenu(event, 'lunch')">Lunch</button>
+      <button class="tablinks" onclick="openMenu(event, 'dinner')">Dinner</button>
+      <button class="tablinks" onclick="openMenu(event, 'drink-dessert')">Desserts & Drinks</button>
+    </div>
+
+    <!-- breakfast foods-->
+
+    <div id="breakfast" class="menu-tab show">
+      <h3>Breakfast</h3>
+      <div class="food-items">
+
+        <div class="food-item" data-item="Pancakes">
+          <div class="food-box">
+            <img src="../images/pancake.jpg" alt="Pancakes">
+            <div class="food-details">
+              <h4>Pancakes</h4>
+              <p>$6.99</p>
+              <input type="number" name="quantity_pancakes" value="0" min="0" data-price="6.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Omelette">
+          <div class="food-box">
+            <img src="../IMAGES/omelet.jpg" alt="Omelette">
+            <div class="food-details">
+              <h4>Omelette</h4>
+              <p>$8.99</p>
+              <input type="number" name="quantity_omelette" value="0" min="0" data-price="8.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="French Toast">
+          <div class="food-box">
+            <img src="../IMAGES/frenchtoast.jpg" alt="French Toast">
+            <div class="food-details">
+              <h4>French Toast</h4>
+              <p>$7.49</p>
+              <input type="number" name="quantity_french_toast" value="0" min="0" data-price="7.49">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Muffins">
+          <div class="food-box">
+            <img src="../IMAGES/muffinshighres.jpg" alt="Muffins">
+            <div class="food-details">
+              <h4>Muffins</h4>
+              <p>$5.99</p>
+              <input type="number" name="quantity_muffins" value="0" min="0" data-price="5.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Waffles">
+          <div class="food-box">
+            <img src="../IMAGES/waffle2.jpg" alt="Waffles">
+            <div class="food-details">
+              <h4>Waffles</h4>
+              <p>$8.49</p>
+              <input type="number" name="quantity_waffles" value="0" min="0" data-price="8.49">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Grilledcheese">
+          <div class="food-box">
+            <img src="../IMAGES/grilledcheese.jpg" alt="Grilledcheese">
+            <div class="food-details">
+              <h4>Grilled Cheese</h4>
+              <p>$4.99</p>
+              <input type="number" name="quantity_grilledcheese" value="0" min="0" data-price="4.99">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    <!-- lunch foods-->
+    <div id="lunch" class="menu-tab">
+      <h3>Lunch</h3>
+      <div class="food-items">
+        
+        <div class="food-item" data-item="Sandwich">
+          <div class="food-box">
+            <img src="../IMAGES/sandwichs.jpg" alt="Sandwich">
+            <div class="food-details">
+              <h4>Sandwich</h4>
+              <p>$5.99</p>
+              <input type="number" name="quantity_sandwich" value="0" min="0" data-price="5.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Salad">
+          <div class="food-box">
+            <img src="../IMAGES/salad.jpg" alt="Salad">
+            <div class="food-details">
+              <h4>Salad</h4>
+              <p>$7.99</p>
+              <input type="number" name="quantity_salad" value="0" min="0" data-price="7.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Burger">
+          <div class="food-box">
+            <img src="../IMAGES/burger.jpg" alt="Burger">
+            <div class="food-details">
+              <h4>Burger</h4>
+              <p>$8.49</p>
+              <input type="number" name="quantity_burger" value="0" min="0" data-price="8.49">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Chicken Wrap">
+          <div class="food-box">
+            <img src="../IMAGES/chickenwrap.jpg" alt="Chicken Wrap">
+            <div class="food-details">
+              <h4>Chicken Wrap</h4>
+              <p>$6.99</p>
+              <input type="number" name="quantity_chicken_wrap" value="0" min="0" data-price="6.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Soup">
+          <div class="food-box">
+            <img src="../IMAGES/soup.jpg" alt="Soup">
+            <div class="food-details">
+              <h4>Soup</h4>
+              <p>$5.49</p>
+              <input type="number" name="quantity_soup" value="0" min="0" data-price="5.49">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Pizza">
+          <div class="food-box">
+            <img src="../IMAGES/pizzahighres.jpg" alt="Pizza">
+            <div class="food-details">
+              <h4>Pizza</h4>
+              <p>$10.99</p>
+              <input type="number" name="quantity_pizza" value="0" min="0" data-price="10.99">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- dinner foods-->
+    <div id="dinner" class="menu-tab">
+      <h3>Dinner</h3>
+      <div class="food-items">
+    
+        <div class="food-item" data-item="Chicken-rice">
+          <div class="food-box">
+            <img src="../IMAGES/chickenandrice.jpg" alt="Chicken-rice">
+            <div class="food-details">
+              <h4>Chicken & Rice</h4>
+              <p>$9.99</p>
+              <input type="number" name="quantity_chicken_rice" value="0" min="0" data-price="9.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Pasta">
+          <div class="food-box">
+            <img src="../IMAGES/pasta.jpg" alt="Pasta">
+            <div class="food-details">
+              <h4>Pasta</h4>
+              <p>$10.99</p>
+              <input type="number" name="quantity_pasta" value="0" min="0" data-price="10.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="BBQwings">
+          <div class="food-box">
+            <img src="../IMAGES/bbqwings.jpg" alt="BBQwings">
+            <div class="food-details">
+              <h4>Barbecue Wings</h4>
+              <p>$12.49</p>
+              <input type="number" name="quantity_BBQ_wings" value="0" min="0" data-price="12.49">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Chicken Parmesan">
+          <div class="food-box">
+            <img src="../IMAGES/chicparm.jpeg" alt="Chicken Parmesan">
+            <div class="food-details">
+              <h4>Chicken Parmesan</h4>
+              <p>$12.99</p>
+              <input type="number" name="quantity_chicken_parmesan" value="0" min="0" data-price="12.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Stir-fry">
+          <div class="food-box">
+            <img src="../IMAGES/stirfry.jpg" alt="Stir-fry">
+            <div class="food-details">
+              <h4>Vegetarian Stir-fry</h4>
+              <p>$11.99</p>
+              <input type="number" name="quantity_stir_fry" value="0" min="0" data-price="11.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Sushi">
+          <div class="food-box">
+            <img src="../IMAGES/sushi.jpg" alt="Sushi">
+            <div class="food-details">
+              <h4>Sushi</h4>
+              <p>$14.49</p>
+              <input type="number" name="quantity_sushi" value="0" min="0" data-price="14.49">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--desserts and drinks-->
+    <!-- no pictures for this section-->
+
+    <div id="drink-dessert" class="menu-tab">
+      <h3>Drinks & Desserts</h3>
+      <div class="food-items">
+       
+        <div class="food-item" data-item="Soda">
+          <div class="food-box">
+            <div class="food-details">
+              <h4>Soda</h4>
+              <p>$1.49</p>
+              <input type="number" name="quantity_soda" value="0" min="0" data-price="1.49">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Coffee">
+          <div class="food-box">
+            <div class="food-details">
+              <h4>Coffee</h4>
+              <p>$4.99</p>
+              <input type="number" name="quantity_coffee" value="0" min="0" data-price="4.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Milk">
+          <div class="food-box">
+            <div class="food-details">
+              <h4>Milk</h4>
+              <p>$1.99</p>
+              <input type="number" name="quantity_milk" value="0" min="0" data-price="1.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Brownie">
+          <div class="food-box">
+            <div class="food-details">
+              <h4>Brownie</h4>
+              <p>$2.99</p>
+              <input type="number" name="quantity_brownie" value="0" min="0" data-price="2.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Cookie">
+          <div class="food-box">
+            <div class="food-details">
+              <h4>Cookie</h4>
+              <p>$1.99</p>
+              <input type="number" name="quantity_cookie" value="0" min="0" data-price="1.99">
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" data-item="Cupcake">
+          <div class="food-box">
+            <div class="food-details">
+              <h4>Cupcake</h4>
+              <p>$2.99</p>
+              <input type="number" name="quantity_cupcake" value="0" min="0" data-price="2.99">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- javascript-->
+
+  <script src="../JS/scriptmenu.js"></script>
+ 
+</body>
+</html>
